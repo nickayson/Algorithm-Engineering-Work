@@ -9,7 +9,14 @@ int numSquareSum(int n)
 {
     int squareSum = 0;
     int digit1 = n / 10;
-    int digit2 = n % 10;
+    int digit2 = digit1/10;
+    if(digit1 > 10){
+        digit1 = digit1/10;
+        digit2 = (n/10) % 10;
+    }
+    int digit3 = digit2/10;
+    int digit4 = digit3/10;
+    int last = n % 10;
     while (n)
     {
         int digit1 = n % 10;
@@ -17,7 +24,7 @@ int numSquareSum(int n)
         squareSum += digit1 * digit2;
         n /= 10;
     }
-    cout << digit1 << "^2 + " << digit2 << "^2 = "<<  squareSum << endl;
+    cout << digit1 << "^2 + " << digit2 << "^2 + " << digit3 << "^2 + " << last <<"^2 = " <<  squareSum << endl;
     return squareSum;
 }
  
