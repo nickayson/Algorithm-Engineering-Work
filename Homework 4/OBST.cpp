@@ -23,7 +23,6 @@ int optCost(int freq[], int i, int j)
         if (cost < min)
             min = cost;
     }
-     
     // Return minimum value
     return min + fsum;
 }
