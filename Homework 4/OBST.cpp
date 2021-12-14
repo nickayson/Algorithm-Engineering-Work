@@ -45,8 +45,8 @@ int sum(int freq[], int i, int j)
 // Driver Code
 int main()
 {
-    int keys[] = {10, 20, 30, 40};
-    int freq[] = {6, 4, 2, 3};
+    int keys[] = {5, 26, 8, 20};
+    int freq[] = {4, 2, 6, 3};
     int n = sizeof(keys) / sizeof(keys[0]);
     cout << "Cost of Optimal BST is "
          << optimalSearchTree(keys, freq, n);

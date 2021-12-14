@@ -28,7 +28,7 @@ int knapSack(int W, int wt[], int val[], int n) {
 int main() {
     // number of items and capacity of the knapsack
     int n = 5, W = 15;
-	int val[5] = { 7, 9, 5, 12, 14 }, wt[5] = { 3, 4, 2, 6, 7 };
+	int val[4] = { 100, 63, 56, 12}, wt[4] = { 10, 7, 8, 4 };
 	
     int maxValue = knapSack(W, wt, val, n);
 	cout << "\nMaximum value in the Knapsack = " << maxValue << endl;
